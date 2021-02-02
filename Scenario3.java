@@ -1,3 +1,4 @@
+
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
@@ -27,5 +28,21 @@ public class Sceanrio3 {
         int count = apply.isEmpty() ? 0 : apply.size();
 
         System.out.println("Available postings:  " + count);
+
+        List<WebElement> locationproof = driver.findElements(By.className("sort-by-location"));
+        for (WebElement obj : locationproof) {
+            if (!obj.getText().equalsIgnoreCase("TORONTO, ONTARIO, CANADA")) {
+                System.out.println(" Validation failed ");
+                break;
+            }
+        }
+        List<WebElement> categoryproof = driver.findElements(By.className("sort-by-team"));
+        for (WebElement obj : categoryproof) {
+            if (!obj.getText().contains("ENGINEERING")) {
+                System.out.println(" Validation failed ");
+                break;
+            }
+        }
     }
+}
 }
