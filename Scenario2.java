@@ -9,7 +9,7 @@ import org.openqa.selenium.support.ui.Select;
 public class Scenario2 {
 
     public static void main(String[] args) {
-        System.setProperty("webdriver.chrome.driver", "C:\\WebDrivers\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "C:\\WebDrivers\\chromedriver.exe");//TODO: Replace actual path where the chrome driver is located...
         WebDriver driver = new ChromeDriver();
         driver.get("https://jobs.lever.co/traderev");
         driver.manage().window().maximize();
