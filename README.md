@@ -8,7 +8,13 @@ Note :
   Sceanrio3.java
   
 
-Sceanrio1: 
+Sceanrio1: Upon Running the Java file , we can observe that Canadian job site is displayed properly , if not Exception is thrown.
+
+Sceanrio2 : We are Validting the results , based on the Location that is displayed below each job posting.
+
+Sceanrio3 : Location is validated same as Scenario2 along with it , team is also validated.
+
+
 
 
 
